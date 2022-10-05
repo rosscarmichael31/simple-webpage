@@ -67,6 +67,22 @@ footer {
 }
 
 .img-flex {
+  flex: 1;
   height: 3em;
   width: 3em;
+}
+
+.parent {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+
+  width: 100%;
+  gap: 5rem;
+  padding: 3rem;
+}
+
+.img-news {
+  width: 15rem;
 }
