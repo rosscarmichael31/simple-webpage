@@ -17,12 +17,14 @@ h1 {
 
 h2 {
   text-align: center;
+  font-size: 2rem;
 }
 
 .logo {
   width: 10rem;
 }
 
+/* Centre the headings on each page */
 .heading {
   margin-right: 10rem;
 }
@@ -130,10 +132,19 @@ footer {
   padding: 3rem;
 }
 
-.img-news {
-  width: 15rem;
+@media (max-width: 950px) {
+  .parent {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    width: 100%;
+    gap: 5rem;
+    padding: 3rem;
+  }
 }
 
-h2 {
-  font-size: 2rem;
+.img-news {
+  width: 15rem;
 }
