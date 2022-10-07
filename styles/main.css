@@ -3,7 +3,7 @@
 }
 
 body {
-  font-size: 1rem;
+  font-size: 1.4rem;
   padding: 1em;
   font-family: Avenir-Roman, sans-serif;
   background-color: beige;
@@ -11,14 +11,30 @@ body {
 
 h1 {
   text-align: center;
+  font-size: 4.5rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h2 {
+  text-align: center;
+}
+
+.logo {
+  width: 10rem;
+}
+
+.heading {
+  margin-right: 10rem;
 }
 
 .nav-bar {
+  flex: 4;
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
   background-color: #04aa6d;
+  padding-bottom: 0;
 }
 
 .nav-bar-child {
@@ -35,16 +51,47 @@ h1 {
   text-decoration: none;
 }
 
-.div-one {
-  background-color: darkgray;
+.heading-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.div-two {
-  background-color: darkgray;
+.heading-child {
+  flex: 4;
+  margin-left: 11rem;
 }
 
-.div-three {
+.heading-child-linkedin {
+  width: 8rem;
+  height: 8rem;
+  margin-right: 16rem;
+}
+
+.parent-content {
+  display: flex;
+  overflow: hidden;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+
+  border-radius: 30px;
+  width: 100%;
+  gap: 2rem;
+  padding: 3rem;
+}
+
+.child-content {
   background-color: darkgray;
+  border-radius: 30px;
+  margin-left: 10%;
+  margin-right: 10%;
+  padding-bottom: 2%;
+  padding-left: 2%;
+  padding-right: 2%;
+  max-width: 70%;
+
+  border: 2px solid;
 }
 
 .img-ross {
@@ -85,4 +132,8 @@ footer {
 
 .img-news {
   width: 15rem;
+}
+
+h2 {
+  font-size: 2rem;
 }
